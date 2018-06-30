@@ -1,0 +1,17 @@
+{
+  "name": "sb_v3",
+  "version": "1.0.0",
+  "description": "static html/css/js for future wordpress website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "html",
+    "scss",
+    "gulp",
+    "webpack"
+  ],
+  "author": "Olivia Coumans",
+  "license": "ISC"
+}
