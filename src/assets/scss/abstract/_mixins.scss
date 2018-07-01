@@ -1,0 +1,30 @@
+// clearfix
+@mixin clearfix {
+  &::after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+}
+
+// media queries
+@mixin atSmall {
+  @media (min-width: 37.5em) {
+    // 600px
+    @content;
+  }
+}
+
+@mixin atMedium {
+  @media (min-width: 56.25em) {
+    // 900px
+    @content;
+  }
+}
+
+@mixin atLarge {
+  @media (min-width: 63.125em) {
+    // 1010px
+    @content;
+  }
+}
