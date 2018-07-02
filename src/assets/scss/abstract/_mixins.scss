@@ -9,8 +9,8 @@
 
 // media queries
 @mixin atSmall {
-  @media (min-width: 37.5em) {
-    // 600px
+  @media (min-width: 34.375em) {
+    // 550px
     @content;
   }
 }

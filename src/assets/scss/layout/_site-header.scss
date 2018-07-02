@@ -1,11 +1,90 @@
 .site-header {
-  padding-top: 2rem;
-  text-align: center;
+  padding-top: 1.3rem;
+  position: relative;
 
+  @include atSmall {
+    text-align: center;
+  }
+  
   &__logo {
     display: inline-block;
-    height: 6rem;
+    height: 4rem;
     width: auto;
+
+    @include atSmall {
+      height: 5rem;
+    }
+
+    @include atMedium { 
+      height: 6rem;
+    }
+  }
+
+  &__menu-icon {
+    width: 2.1rem;
+    height: 2.1rem;
+    position: absolute;
+    top: 2.4rem;
+    right: 2rem;
+    text-align: left;
+
+    @include atSmall {
+      top: 2.9rem;
+    }
+
+    @include atMedium {
+      top: 3.2rem;
+    }
+
+    @include atLarge {
+      display: none;     
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 2.1rem;
+      height: 3px;
+      top: 0;
+      background-color: $grey-dark;
+    }
+
+    &__middle {
+      position: absolute;
+      width: 2.1rem;
+      height: 3px;
+      top: .9rem;
+      background-color: $grey-dark;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 2.1rem;
+      height: 3px;
+      background-color: $grey-dark;
+      bottom: 0;
+    }
+  }
+
+  &__menu-content {
+    position: relative;
+    z-index: -12;
+    opacity: 0;
+    transition: all .3s ease-out;
+    text-align: left;
+
+    @include atLarge {
+      text-align: center;
+      margin-top: 1.2rem;
+      z-index: 1;
+      opacity: 1;
+    }  
+  }
+
+  &__menu-content--is-visible {
+    opacity: 1;
+    z-index: 1;
   }
 
 }

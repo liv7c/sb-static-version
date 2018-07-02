@@ -1,6 +1,7 @@
 @import './abstract/mixins';
+@import './abstract/variables';
 @import './base/global';
 @import './base/typography';
 @import './base/utilities';
 @import './layout/site-header';
-@import './layout/navigation';
+@import './layout/primary-nav';

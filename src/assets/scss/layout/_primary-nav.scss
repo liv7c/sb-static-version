@@ -1,0 +1,57 @@
+.primary-nav {
+  margin: 1.7rem 0;
+  background: #f7f7f7;
+
+  @include atLarge {
+    background: transparent;
+    padding: 1.2rem 0;
+    border-top: 1px solid $grey-extra-light;
+    border-bottom: 1px solid $grey-extra-light;
+  }
+  
+  ul { 
+    list-style: none;
+    padding: 0;
+    padding-left: 1rem;
+    margin: 0;
+
+    @include atSmall {
+      padding-left: 0;
+    } 
+  }
+
+  li {
+    display: block;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid $grey-extra-light;
+
+    @include atLarge {
+      border-bottom: none;
+      display: inline-block;
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-right: 5rem;
+      font-size: 1.7rem;
+      text-transform: capitalize;
+    }
+  }
+
+  li:last-child {
+    border-bottom: none;
+    padding-right: 0rem;
+  }
+
+  a {
+    display: block;
+    transition: color .3s;
+
+    &:link,
+    &:visited {
+      color: $grey-dark;
+    }
+
+    &:hover {
+      color: $medium-blue;
+    }
+  }
+}
