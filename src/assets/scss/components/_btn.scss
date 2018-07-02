@@ -1,0 +1,11 @@
+.btn {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border: 1px solid $grey-dark;
+  border-radius: 3px;
+
+  &:hover {
+    background: $grey-dark;
+    color: $color-white;
+  }
+}

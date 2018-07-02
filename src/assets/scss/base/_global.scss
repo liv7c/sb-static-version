@@ -21,6 +21,13 @@ img, video, iframe {
 }
 
 a,
-a:link {
+a:link,
+a:visited {
+  transition: all .3s ease-out;
   text-decoration: none;
+  color: #333;
 }
+
+a:hover {
+  color: $medium-blue;
+} 

@@ -3,3 +3,11 @@
   padding: 0 2rem;
   margin: 0 auto;
 }
+
+.mb-small {
+  margin-bottom: 2rem;
+
+  @include atMedium {
+    margin-bottom: 3.5rem;
+  }
+}
