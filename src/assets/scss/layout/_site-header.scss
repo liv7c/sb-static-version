@@ -22,14 +22,15 @@
 
   &__menu-icon {
     width: 2.1rem;
-    height: 2.1rem;
+    height: 2rem;
     position: absolute;
-    top: 2.4rem;
+    top: 2rem;
     right: 2rem;
     text-align: left;
+    cursor: pointer;
 
     @include atSmall {
-      top: 2.9rem;
+      top: 2.6rem;
     }
 
     @include atMedium {
@@ -47,6 +48,8 @@
       height: 3px;
       top: 0;
       background-color: $grey-dark;
+      transition: all .3s ease-out;
+      transform-origin: 0 0;
     }
 
     &__middle {
@@ -55,6 +58,8 @@
       height: 3px;
       top: .9rem;
       background-color: $grey-dark;
+      transition: all .3s ease-out;
+      transform-origin: 0 50%;
     }
 
     &::after {
@@ -64,6 +69,23 @@
       height: 3px;
       background-color: $grey-dark;
       bottom: 0;
+      transition: all .3s ease-out;
+      transform-origin: 0 100%;
+    }
+  }
+
+  &__menu-icon--close-x {
+    &::before {
+      transform: rotate(45deg) scaleX(1.2);
+    }
+
+    .site-header__menu-icon__middle {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+
+    &::after {
+      transform: rotate(-45deg) scaleX(1.2);
     }
   }
 
@@ -73,7 +95,7 @@
     opacity: 0;
     transition: all .3s ease-out;
     text-align: left;
-
+   
     @include atLarge {
       text-align: center;
       margin-top: 1.2rem;
