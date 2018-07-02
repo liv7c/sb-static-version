@@ -14,10 +14,15 @@
     padding: 0;
     padding-left: 1rem;
     margin: 0;
+    display: block;
 
     @include atSmall {
       padding-left: 0;
     } 
+
+    @include atLarge {
+      display: inline-block;
+    }
   }
 
   li {
@@ -37,8 +42,11 @@
   }
 
   li:last-child {
-    border-bottom: none;
     padding-right: 0rem;
+
+    @include atLarge {
+      border-bottom: none;
+    }
   }
 
   a {
@@ -53,5 +61,20 @@
     &:hover {
       color: $medium-blue;
     }
+  }
+
+  &__search-icon {
+    padding: 1.5rem 0;
+    padding-left: 1rem;
+    
+    @include atLarge {  
+      &:link,
+      &:visited {
+        padding: 0;
+        display: inline-block;
+        margin-left: 5rem;
+        position: relative;
+      }
+    }  
   }
 }
