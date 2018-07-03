@@ -1,11 +1,15 @@
 .btn {
   display: inline-block;
   padding: 1rem 1.5rem;
-  border: 1px solid $grey-dark;
-  border-radius: 3px;
+  border: 1px solid $medium-blue;
+
+  &:link,
+  &:visited {
+    color: $medium-blue;
+  }
 
   &:hover {
-    background: $grey-dark;
+    background: $medium-blue;
     color: $color-white;
   }
 }

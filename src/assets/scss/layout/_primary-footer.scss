@@ -1,0 +1,15 @@
+.primary-footer {
+  margin-top: 2.5rem;
+  background-color: #032B43;
+  color: $color-white;
+
+  &__text {
+    margin: 0;
+    font-size: 1.6rem;
+  }
+
+  &__copyright {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}

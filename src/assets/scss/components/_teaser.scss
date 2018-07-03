@@ -1,20 +1,49 @@
 .teaser {
+  &__category {
+    margin: .6rem 0;
+    color: $medium-blue;
+    letter-spacing: 3px;
+
+    &--yellow {
+      color: $main-yellow-dark;
+    }
+
+    &--red {
+      color: $main-red;
+    }
+  }
+
   &__title {
-    margin-top: 0;
+    font-size: 2rem;
+    margin: 0;
+    line-height: 1.4;
 
-    &--large {
-      letter-spacing: 2px;
-      font-size: 2.4rem;
-      line-height: 1.3;
-      margin-bottom: 1.5rem;
+    &--small {
+      font-size: 1.9rem; 
+    }
+  }
 
-      @include atMedium {
-        font-size: 2.8rem;
+  &__title-link {
+    &--yellow {
+      &:hover {
+        color: $main-yellow-dark;
+      }
+    }
+
+    &--red {
+      &:hover {
+        color: $main-red;
       }
     }
   }
 
-  &__excerpt {
-    line-height: 1.7;
+  &__artist {
+    display: block;
+    font-weight: bold;
+  }
+
+  &__album {
+    display: block;
+    font-size: 1.7rem;
   }
 }

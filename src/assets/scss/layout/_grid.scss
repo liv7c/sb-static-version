@@ -30,10 +30,14 @@
   @include atSmall {
     & > .col-sm-6 {
       width: calc((100% - #{$gutter-horizontal}) / 2); 
-      
+ 
       &:not(:last-child) {
         margin-bottom: $gutter-vertical;
         margin-right: $gutter-horizontal;  
+      }
+
+      &:nth-of-type(even) {
+        margin-right: 0;
       }
     }
   }
@@ -49,6 +53,10 @@
 
     & > .col-md-3 {
       width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
+
+      &:not(:last-child) {
+        margin-right: $gutter-horizontal;
+      }
     }
 
     & > .col-md-4 {
