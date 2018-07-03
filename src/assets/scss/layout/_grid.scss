@@ -32,13 +32,8 @@
       width: calc((100% - #{$gutter-horizontal}) / 2); 
       
       &:not(:last-child) {
-        margin-bottom: $gutter-vertical-small;
-        margin-right: 0;
-  
-        @include atSmall {
-          margin-bottom: $gutter-vertical;
-          margin-right: $gutter-horizontal;
-        }
+        margin-bottom: $gutter-vertical;
+        margin-right: $gutter-horizontal;  
       }
     }
   }
