@@ -1,3 +1,11 @@
 .home-posts {
   background: $color-white;
 }
+
+.home-feature {
+  &__img {
+    @include atMedium {
+      margin-bottom: 1rem !important;
+    }  
+  }
+}
