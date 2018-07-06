@@ -22,13 +22,17 @@
 
   &__body {
     @include atSmall {
-      max-width: 80%;
+      max-width: 75%;
     }
 
     @include atMedium {
       max-width: 100%;
-      padding: 0 1rem 1rem;
+      padding: 0 .7rem 1rem;
     }  
+
+    @include atLarge {
+      padding: 0 2.1rem 1rem;
+    }
   }
 
   &__title {
