@@ -12,4 +12,16 @@
     background: $medium-blue;
     color: $color-white;
   }
+
+  &--red {
+    border: 1px solid $main-red;
+    &:link,
+    &:visited {
+      color: $main-red;
+    }
+    &:hover {
+      background: $main-red;
+      color: $color-white;
+    }
+  }
 }
