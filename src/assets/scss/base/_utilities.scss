@@ -4,9 +4,16 @@
   margin: 0 auto;
 }
 
+.u-center {
+  text-align: center;
+}
+
+.u-m-bottom-small {
+  margin-bottom: 2.5rem;
+}
+
 .mb-small {
   margin-bottom: 2rem;
-
   @include atMedium {
     margin-bottom: 3.5rem;
   }

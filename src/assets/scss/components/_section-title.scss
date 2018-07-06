@@ -15,6 +15,15 @@
     &--small {
       font-size: 2.3rem;
     }
+
+    &--big {
+      font-size: 2.8rem;
+      @include atMedium {
+        font-size: 3.3rem;
+        text-transform: uppercase;
+      }
+      
+    }
   }
 
   &__bar-container {
