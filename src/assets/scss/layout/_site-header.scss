@@ -25,11 +25,7 @@
     right: 2rem;
     text-align: left;
     cursor: pointer;
-
-    @include atSmall {
-      top: 2.6rem;
-    }
-
+    
     @include atMedium {
       top: 3.2rem;
     }
