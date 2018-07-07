@@ -2,7 +2,7 @@
   margin: 1.7rem 0;
   background: #f7f7f7;
 
-  @include atLarge {
+  @include atMedium {
     margin: 0;
     background: transparent;
     padding: 1.2rem 0;
@@ -21,7 +21,7 @@
       padding-left: 0;
     } 
 
-    @include atLarge {
+    @include atMedium {
       display: inline-block;
     }
   }
@@ -31,7 +31,7 @@
     padding: 1.5rem 0;
     border-bottom: 1px solid $grey-extra-light;
 
-    @include atLarge {
+    @include atMedium {
       border-bottom: none;
       display: inline-block;
       padding-top: 0;
@@ -45,7 +45,7 @@
   li:last-child {
     padding-right: 0rem;
 
-    @include atLarge {
+    @include atMedium {
       border-bottom: none;
     }
   }
@@ -68,7 +68,7 @@
     padding: 1.5rem 0;
     padding-left: 1rem;
     
-    @include atLarge {  
+    @include atMedium {  
       &:link,
       &:visited {
         padding: 0;

@@ -30,7 +30,7 @@
       top: 3.2rem;
     }
 
-    @include atLarge {
+    @include atMedium {
       display: none;     
     }
 
@@ -87,7 +87,7 @@
     display: none;
     text-align: left;
    
-    @include atLarge {
+    @include atMedium {
       text-align: center;
       margin-top: 1.2rem;
       display: block;
