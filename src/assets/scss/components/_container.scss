@@ -1,0 +1,15 @@
+.container {
+  max-width: 124rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+
+  &--narrow {
+    @include atSmall {
+      max-width: 80%;
+    }
+
+    @include atLarge {
+      max-width: 124rem;
+    }
+  }
+}
