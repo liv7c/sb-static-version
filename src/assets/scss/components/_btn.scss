@@ -24,4 +24,16 @@
       color: $color-white;
     }
   }
+
+  &--yellow {
+    border: 1px solid $main-yellow-dark;
+    &:link,
+    &:visited {
+      color: $main-yellow-dark;
+    }
+    &:hover {
+      background: $main-yellow-dark;
+      color: $color-white;
+    }
+  }
 }

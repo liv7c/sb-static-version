@@ -1,0 +1,25 @@
+.interviews-list {
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    margin-bottom: 3.5rem;
+
+    @include atLarge {
+      background: $color-white;
+      box-shadow: 0 .8rem 1.2rem rgba(0, 0, 0, .15);
+    }
+  }
+
+  &__img-container {
+    margin-bottom: 1.5rem !important;
+
+    @include atLarge {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  &__img {
+    display: block;
+  }
+}

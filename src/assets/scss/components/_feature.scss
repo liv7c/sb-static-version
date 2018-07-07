@@ -15,12 +15,38 @@
     }
   }
 
+  &__title-link {
+    &--yellow {
+      &:link,
+      &:visited {
+        color: #333;
+        transition: all .3s;
+      }
+  
+      &:hover,
+      &:focus {
+        color: $main-yellow-dark;
+      }
+    } 
+  }
+
   &__excerpt {
     line-height: 1.6;
     font-size: 1.5rem;
 
     @include atMedium {
       font-size: 1.6rem;
+      margin-bottom: 2.5rem;
+    }
+
+    @include atLarge {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &--card {
+    @include atLarge {
+      padding: 2.5rem 2rem 0 0;
     }
   }
 }
