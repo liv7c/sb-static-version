@@ -1,5 +1,11 @@
 .teaser {
+  padding-bottom: 2rem;
+
+  @include atMedium {
+    padding-bottom: 0;
+  }
   &__category {
+    font-size: 1.5rem;
     margin: .6rem 0;
     color: $medium-blue;
     letter-spacing: 3px;
@@ -14,7 +20,7 @@
   }
 
   &__title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: 0;
     line-height: 1.4;
 
