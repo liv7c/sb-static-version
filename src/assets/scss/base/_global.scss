@@ -20,6 +20,10 @@ img, video, iframe {
   max-width: 100%;
 }
 
+img {
+  display: block;
+}
+
 a,
 a:link,
 a:visited {

@@ -1,0 +1,91 @@
+.review {
+  &__hero {
+    min-height: 30rem;
+  }
+
+  &__tags {
+    margin: 0;
+    color: $medium-blue;
+  }
+  
+  &__title {
+    position: relative; 
+    font-weight: 400;
+    margin: 2rem;
+
+    @include atSmall {
+      text-align: center;
+    }
+
+    @include atMedium {
+      margin-top: 0;
+      top: 3rem;
+    }
+
+    &__artist {
+      display: block;
+      font-size: 3rem;
+
+      @include atMedium {
+        font-size: 3.5rem;
+        letter-spacing: 3px;
+      }
+    }
+
+    &__album {
+      display: block;
+      font-size: 3.3rem;
+
+      @include atMedium {
+        font-size: 3.7rem;
+      }
+    }
+
+    &__bar {
+      width: 4rem;
+      height: 5px;
+      display: inline-block;
+      background-color: $medium-blue;
+    }
+  }
+
+  &__feat-img-credit {
+    color: #9e9c9c;
+    font-size: 1.5rem;
+  }
+
+  &__subtitle { 
+    position: relative;
+    font-size: 1.7rem;
+
+    @include atSmall {
+      text-align: center;
+      top: 2.5rem;
+    }
+    @include atMedium {
+      top: 6rem;
+    }
+    
+  }
+
+  &__body {
+    margin: 4rem 0;
+    font-size: 1.7rem;
+    line-height: 1.7;
+
+    a {
+      &:link,
+      &:visited {
+        color: $medium-blue;
+      }
+
+      &:hover {
+        color: darken($medium-blue, 10%);
+      }
+    }
+  }
+
+  &__btn {
+    margin-bottom: 2rem;
+  }
+}

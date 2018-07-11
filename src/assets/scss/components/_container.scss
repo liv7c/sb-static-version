@@ -4,7 +4,6 @@
   margin: 0 auto;
 
   &--narrow {
-    background-color: $color-white;
     @include atSmall {
       max-width: 80%;
     }
@@ -12,5 +11,11 @@
     @include atLarge {
       max-width: 124rem;
     }
+  }
+
+  &--extra-narrow {
+    max-width: 85rem;
+    background: #fefefe;
+    padding: 2rem 3rem;
   }
 }
