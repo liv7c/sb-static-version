@@ -1,0 +1,74 @@
+.post {
+  &__category {
+    color: $main-red;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+  }
+
+  &__title {
+    font-weight: 400;
+  }
+
+  &__date {
+    margin-top: 1rem;
+    margin-bottom: 2.3rem;
+  }
+
+  &__content {
+    margin-top: 3rem;
+    font-size: 1.7rem;
+    p {
+      line-height: 1.6;
+    }
+
+    @include atMedium {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__image-credit {
+    font-size: 1.4rem;
+    text-align: right;
+    margin: 0;
+    padding-top: 2px;
+  }
+
+  &__back-btn {
+    display: block;
+    margin-top: 3rem;
+
+    @include atMedium {
+      margin-top: -4rem;
+      position: relative;
+      top: -3rem;
+    }
+
+    &--review {
+      margin: 4.5rem 0 3rem;
+    }   
+  }
+  
+  &__recommended {
+    a:hover,
+    a:focus {
+      color: $main-red;
+    }
+  }
+  
+  
+  h4 {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  h5 {
+    margin-top: 1.2rem;
+    font-weight: 400;
+    font-size: 1.7rem;
+
+    @include atMedium {
+      font-size: 1.6rem;
+    }  
+  }
+}
