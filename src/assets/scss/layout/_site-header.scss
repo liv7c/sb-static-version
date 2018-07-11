@@ -1,5 +1,5 @@
 .site-header {
-  padding-top: 1.2rem;
+  padding: 2rem 0 0;
   position: relative;
   background-color: $color-white;
 
@@ -9,11 +9,18 @@
   
   &__logo {
     display: inline-block;
-    height: 4.3rem;
     width: auto;
+    height: 2.6rem;
+    margin-bottom: 1.5rem;
+
+    @include atSmall {
+      height: 3.5rem;
+    }
 
     @include atMedium {
-      height: auto;
+      height: 4.3rem;
+      margin-bottom: 0;
+    
     }
   }
 

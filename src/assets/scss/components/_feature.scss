@@ -18,15 +18,15 @@
 
   &__title-link {
     &--yellow {
-      &:link,
-      &:visited {
-        color: #333;
-        transition: all .3s;
-      }
-  
       &:hover,
       &:focus {
         color: $main-yellow-dark;
+      }
+    } 
+    &--red {
+      &:hover,
+      &:focus {
+        color: $main-red;
       }
     } 
   }
