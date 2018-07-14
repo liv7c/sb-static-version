@@ -36,7 +36,7 @@
       display: inline-block;
       padding-top: 0;
       padding-bottom: 0;
-      padding-right: 5rem;
+      padding-right: 4rem;
       font-size: 1.7rem;
       text-transform: capitalize;
     }
@@ -50,32 +50,21 @@
     }
   }
 
-  a {
-    display: block;
-    transition: color .3s;
-
-    &:link,
-    &:visited {
-      color: $grey-dark;
-    }
-
-    &:hover {
-      color: $medium-blue;
-    }
-  }
-
   &__search-icon {
-    padding: 1.5rem 0;
-    padding-left: 1rem;
+    display: none;
     
     @include atMedium {  
-      &:link,
-      &:visited {
-        padding: 0;
-        display: inline-block;
-        margin-left: 5rem;
-        position: relative;
+      display: inline-block;
+      margin-left: 4rem;
+      cursor: pointer;
+      transition: all .3s;
+      position: relative;
+      top: 1px;
+
+      &:hover {
+        color: $medium-blue;
       }
+      
     }  
   }
 }
