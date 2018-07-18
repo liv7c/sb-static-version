@@ -54,21 +54,15 @@
     a:focus {
       color: $main-red;
     }
-  }
-  
-  
-  h4 {
-    font-size: 2rem;
-    font-weight: 400;
-  }
 
-  h5 {
-    margin-top: 1.2rem;
-    font-weight: 400;
-    font-size: 1.7rem;
-
-    @include atMedium {
-      font-size: 1.6rem;
-    }  
+    &-title {
+      margin-top: 1.2rem;
+      font-weight: 400;
+      font-size: 1.7rem;
+  
+      @include atMedium {
+        font-size: 1.6rem;
+      }  
+    }
   }
 }
