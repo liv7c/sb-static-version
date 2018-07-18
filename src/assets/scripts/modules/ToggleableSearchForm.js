@@ -1,6 +1,7 @@
 class ToggleableSearchForm {
   constructor() {
     this.searchForm = document.querySelector('.search-form');
+    this.searchFormInput = document.querySelector('.search-form__input');
     this.toggleFormBtns = document.querySelectorAll('.toggle-form-btn');
     this.searchIcons = document.querySelectorAll('.toggle-form-btn__search');
     this.crossIcons = document.querySelectorAll('.toggle-form-btn__cross');
@@ -22,6 +23,7 @@ class ToggleableSearchForm {
     // for searchForm
     if (this.searchForm.className === 'search-form') {
       this.searchForm.className = 'search-form search-form--visible';
+      this.searchFormInput.focus();
       searchIconArr.forEach(
         icon => (icon.className = 'icon-search toggle-form-btn__search')
       );
