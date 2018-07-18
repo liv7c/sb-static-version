@@ -1,0 +1,16 @@
+.toggle-form-btn {
+  &__search {
+    display: none;
+    &--visible {
+      display: block;
+    }
+  }
+
+  &__cross {
+    display: none;
+
+    &--visible {
+      display: block;
+    }
+  }
+}

@@ -14,15 +14,12 @@
 
   &__icon {
     display: inline-block;   
-    font-size: 5rem;
-
-    &:link,
-    &:visited {
-      color: #FEFEFE;
-    }
+    font-size: 3.5rem;
+    margin-right: 1rem;
+    transition: opacity .3s;
 
     &:hover {
-      color: $medium-blue;
+      opacity: .7;
     }
   }
 

@@ -1,3 +1,4 @@
+@import './vendor/normalize';
 @import './abstract/mixins';
 @import './abstract/variables';
 @import './base/global';
@@ -15,6 +16,7 @@
 @import './components/search-form';
 @import './components/section-title';
 @import './components/teaser';
+@import './components/toggle-form-btn';
 @import './components/widget';
 @import './layout/grid';
 @import './components/interviews-list';
